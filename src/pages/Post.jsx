@@ -33,7 +33,7 @@ export default function Post() {
     };
 
     return post ? (
-        <div className="py-8 my-10">
+        <div className="py-8 mt-10 m-10 ">
             <Container>
                 <div className="w-full flex justify-center mb-4 relative border rounded-xl p-2">
                     <img
@@ -42,7 +42,7 @@ export default function Post() {
                         className="rounded-xl"
                     />
 
-                    {isAuthor && (
+                  
                         <div className="absolute right-6 top-6">
                             <Link to={`/edit-post/${post.$id}`}>
                                 <Button className="mr-3 text-black">
@@ -53,7 +53,7 @@ export default function Post() {
                                 Delete
                             </Button>
                         </div>
-                    )}
+            
                 </div>
                 <div className="w-full mb-6">
                     <h1 className="text-2xl font-bold">{post.title}</h1>
